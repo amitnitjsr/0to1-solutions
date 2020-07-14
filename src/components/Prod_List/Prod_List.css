@@ -28,3 +28,10 @@
 .inputstyle{
     margin-left: 10%;
 }
+
+.card-style{
+    max-width: 250px;
+    max-height: 500px;
+    margin: 20px;
+    /* style={{ maxWidth: 250, maxHeight: 500, margin: '20px' }} */
+}

@@ -7,7 +7,9 @@ const iState = {
 };
 
 const reducer = (state = iState, action) => {
+
     switch (action.type) {
+
         case "pushListCarts":
             // Add carts values
             if (state.cartData.length === 0) {
@@ -40,6 +42,7 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice + parseInt(n[0].price, 10)
                 }
             }
+
         case "deleteCartListById":
             // Delete cart
             let result = Object.entries(action.payload.id);
@@ -61,6 +64,7 @@ const reducer = (state = iState, action) => {
                 "list": state.list,
                 "totalPrice": state.totalPrice - tot
             };
+
         case "addListCart":
             // Add Quantity
             const existingProduct1 = state.cartData.filter(val => val.id === action.payload.id);
@@ -81,7 +85,8 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice + parseInt(existingProduct1[0].price, 10)
                 }
             }
-        // eslint-disable-next-line
+
+            break;
         case "subCartList":
             //Subtract Quantity
             const existingProduct2 = state.cartData.filter(val => val.id === action.payload.id);
@@ -102,7 +107,8 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice - parseInt(existingProduct2[0].price, 10)
                 }
             }
-        // eslint-disable-next-line
+            break;
+
         case "clearListCarts":
             // Clear cart values
             return {
@@ -141,7 +147,7 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice
                 }
             }
-        // eslint-disable-next-line
+
         default:
             return state;
     }

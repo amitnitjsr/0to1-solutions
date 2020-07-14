@@ -56,7 +56,7 @@ class Prod_List extends Component {
                     {this.props.list ?
                         this.props.list.map((val) => {
                             return (
-                                < Card key={val.id} style={{ maxWidth: 250, maxHeight: 500, margin: '20px' }}>
+                                < Card key={val.id} className="card-style">
                                     <CardActionArea>
                                         <CardMedia
                                             component="img"
