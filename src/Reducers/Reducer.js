@@ -75,7 +75,6 @@ const reducer = (state = iState, action) => {
                         }
                     }
                 })
-
                 return {
                     "cartData": [...updatedCart],
                     "list": state.list,
@@ -97,7 +96,6 @@ const reducer = (state = iState, action) => {
                         }
                     }
                 })
-
                 return {
                     "cartData": [...updatedCart],
                     "list": state.list,
@@ -130,7 +128,6 @@ const reducer = (state = iState, action) => {
                             .toLowerCase()
                             .includes(action.payload.searchInput.toLowerCase())
                 })
-
                 return {
                     "cartData": state.cartData,
                     "list": filteredData,

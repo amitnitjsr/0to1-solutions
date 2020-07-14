@@ -10,7 +10,6 @@ import Rating from '@material-ui/lab/Rating';
 import { Row, Col } from 'reactstrap';
 import { connect } from "react-redux";
 import './Prod_List.css';
-
 class Prod_List extends Component {
     constructor(props) {
         super(props);
@@ -52,17 +51,17 @@ class Prod_List extends Component {
                         <button className="search-btn" type="submit" onClick={() => this.searchHandler()} > search</button>
                     </Col>
                 </Row>
+
                 <div className="parent" >
                     {this.props.list ?
                         this.props.list.map((val) => {
                             return (
-                                < Card style={{ maxWidth: 250, maxHeight: 500, margin: '20px' }}>
+                                < Card key={val.id} style={{ maxWidth: 250, maxHeight: 500, margin: '20px' }}>
                                     <CardActionArea>
                                         <CardMedia
                                             component="img"
                                             alt="Contemplative Reptile"
                                             height="300"
-
                                             image={val.image}
                                             title="Contemplative Reptile"
                                         />
