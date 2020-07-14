@@ -1,0 +1,30 @@
+/* .parent {
+    border: 5px;
+} */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    margin-left: 8%;
+}
+
+.margin{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+.select{
+    height: 34px;
+    border-radius: 5px;
+}
+.input{
+    height: 34px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.search-btn{
+    height: 34px;
+    border-radius: 5px;
+}
+.inputstyle{
+    margin-left: 10%;
+}
