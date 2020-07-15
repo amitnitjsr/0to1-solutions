@@ -20,6 +20,7 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice + parseInt(pr[0].price, 10)
                 };
             }
+
             const existingProduct = state.cartData.filter(val => val.id === action.payload.id);
 
             if (existingProduct.length > 0) {
@@ -85,8 +86,8 @@ const reducer = (state = iState, action) => {
                     "totalPrice": state.totalPrice + parseInt(existingProduct1[0].price, 10)
                 }
             }
-
             break;
+
         case "subCartList":
             //Subtract Quantity
             const existingProduct2 = state.cartData.filter(val => val.id === action.payload.id);

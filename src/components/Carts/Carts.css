@@ -607,103 +607,21 @@
     float: right !important;
     margin-top: 0.5rem;
   }
-  /* @media screen and (max-width: 1366px) {
-    .dashbord .pointer {
-      cursor: pointer;
-      float: right !important;
-      position: relative;
-      top: 1px !important;
-    }
-    .dashbord .img {
-      position: absolute;
-      top: 0px;
-      left: -90px !important;
-    }
-    .dashbord .conent {
-      font-size: large;
-      position: relative;
-      left: 30px;
-      top: 20px;
-    }
-  } */
+  
   .dropdown-menu {
     transform: translate3d(-113px, 38px, 0px) !important;
   }
-  /* .dashbord h3 {
-    background: -webkit-linear-gradient(#e51722, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-  } */
+  
   .ReactTable{
     margin-left: auto!important;
   }
 
-   /* search button */
 
   * {
     box-sizing: border-box;
   }
   
-  /* Style the search field */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-    border-radius: 3ppx;
-  }
   
-  /* Style the submit button */
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    /* background: #ed4760;
-    color: white; */
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-    border-radius: 3px;
-    background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(222,8,152,1) 0%, rgba(240,142,37,1) 100%, rgba(245,178,7,0.969625350140056) 100%, rgba(255,0,219,1) 100%);
-
-  }
-  
-  form.example button:hover {
-    /* background: rgb(2,0,36); */
-    /* background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(222,8,152,1) 0%, rgba(227,46,120,1) 0%, rgba(230,71,98,1) 6%, rgba(229,66,102,1) 81%, rgba(240,142,37,1) 100%, rgba(245,178,7,0.969625350140056) 100%, rgba(255,0,219,1) 100%); */
-    background: #dc3582fc!important;
-    /* background: #bb263d; */
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .button_color{
-    background-color:#ed4760;
-    
-  }
-  .button_color:hover{
-    background: #79041D!important;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(222,8,152,1) 0%, rgba(227,46,120,1) 0%, rgba(230,71,98,1) 6%, rgba(229,66,102,1) 81%, rgba(240,142,37,1) 100%, rgba(245,178,7,0.969625350140056) 100%, rgba(255,0,219,1) 100%); */
-  }
-  .btn-secondary {
-    background-color: transparent;
-    /* background: rgb(2,0,36);
-    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(222,8,152,1) 0%, rgba(240,142,37,1) 100%, rgba(245,178,7,0.969625350140056) 100%, rgba(255,0,219,1) 100%); */
-
-    /* color: #fff;
-    background-color: #ed4760 !important; */
-    /* border-color: #6c757d; */
-}
 .button_pos{
   left: -21px;
   position: relative !important;
@@ -741,11 +659,7 @@
     border-radius: .25rem;
     width: 46%;
 }
-/* .div.rt.td.Name_TextCenter{
-    flex: 263 0 auto;
-    width: 263px;
-    max-width: 263px;
-} */
+
 .rt-tr{
   background-color: #e9ecef;
 

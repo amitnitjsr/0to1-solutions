@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import { connect } from "react-redux";
 import './Carts.css';
 
-
 class Carts extends React.Component {
     constructor(props) {
         super(props);
@@ -39,7 +38,7 @@ class Carts extends React.Component {
     deleteHandler = (id) => {
         if (Object.keys(this.state.selected).length !== 0) {
             this.props.deleteCartListById(this.state.selected);
-            this.setState({ selectedRow: null, selected: {}, hideButton: false, editBtnHide: true })
+            this.setState({ selectedRow: null, selected: {}, hideButton: false })
         }
         else {
             const newSelected = Object.assign({}, this.state.selected);
@@ -95,7 +94,6 @@ class Carts extends React.Component {
                             },
                             {
                                 Header: () => <div className="Header" style={{ textAlign: 'initial' }} >Product Name</div>,
-                                // accessor: 'pro_name',
                                 className: 'Name TextCenter',
                                 headerClassName: 'Name TextCenter',
                                 Cell: (row) => {
@@ -117,7 +115,6 @@ class Carts extends React.Component {
                                                         Size: {row.row._original.size}
                                                     </span>
                                                 </Col>
-
                                             </Row>
                                         </div>
                                     )
@@ -127,7 +124,6 @@ class Carts extends React.Component {
                             },
                             {
                                 Header: () => <div className="Header" >Price</div>,
-                                // accessor: 'price',
                                 foldable: false,
                                 className: 'company TextCenter',
                                 headerClassName: 'company TextCenter',

@@ -18,9 +18,8 @@ class Success extends Component {
                          </span><br />
                         <span>
                             Payment Successfully Received
-                </span>
+                       </span>
                     </div>
-
                 </div>
             </div>
         )

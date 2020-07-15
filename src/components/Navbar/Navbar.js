@@ -9,8 +9,6 @@ import { Link } from 'react-router-dom';
 import NotificationBadge from 'react-notification-badge';
 import { connect } from 'react-redux';
 
-
-
 const drawerWidth = 0;
 
 const useStyles = makeStyles((theme) => ({
@@ -49,9 +47,8 @@ function Navbar(props) {
                     <Col className="col-md-1 col-sm-1 ml-auto">
                         <span>
                             <Link to='/cart' style={{ color: 'black' }}>
-                                <i className="zmdi zmdi-shopping-cart zmdi-hc-lg"></i>
-                                <NotificationBadge count={props.cartData.length} className="st" >
-                                </NotificationBadge>
+                                <i className="zmdi zmdi-shopping-cart zmdi-hc-lg" />
+                                <NotificationBadge count={props.cartData.length} className="st" />
                             </Link>
                         </span>
                         <span >
