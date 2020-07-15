@@ -1,7 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-## Project Deployed in the following link
-DEMO : (https://stupefied-goldberg-79210b.netlify.app/) for more information.
+
 
 ## Table of Contents
 
